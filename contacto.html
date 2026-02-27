@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contacto - EONM</title>
+     <link rel="stylesheet" href="styles.css">
+     <style>
+          /* Estilos específicos para las tarjetas de contacto */
+          .contacto-grid {
+               display: grid;
+               grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+               gap: 30px;
+               margin-top: 40px;
+          }
+
+          .canal-contacto {
+               background: var(--gris-suave);
+               padding: 40px;
+               border-radius: 15px;
+               text-align: center;
+               border-bottom: 5px solid var(--azul-primario);
+               transition: transform 0.3s ease;
+          }
+
+          .canal-contacto:hover {
+               transform: translateY(-10px);
+          }
+
+          .canal-contacto h3 {
+               margin-top: 0;
+               font-size: 1.5rem;
+          }
+
+          .canal-contacto p {
+               font-size: 1.1rem;
+               margin: 15px 0;
+          }
+
+          .link-directo {
+               color: var(--azul-acento);
+               font-weight: bold;
+               text-decoration: none;
+               font-size: 1.2rem;
+          }
+
+          .link-directo:hover {
+               text-decoration: underline;
+          }
+     </style>
+</head>
+
+<body>
+     <header>
+          <a href="index.html" class="logo">EONM</a>
+          <nav>
+               <a href="index.html">Inicio</a>
+               <a href="nosotros.html">Nosotros</a>
+               <a href="programa.html">Programa</a>
+               <a href="metodologia.html">Metodología</a>
+               <a href="contacto.html">Contacto</a>
+          </nav>
+     </header>
+
+     <section style="text-align: center;">
+          <h2>¿Listo para empezar?</h2>
+          <p style="max-width: 700px; margin: 0 auto;">Estamos aquí para resolver tus dudas sobre el programa
+               <strong>Asesores en Formación</strong> y ayudarte a potenciar tu perfil profesional en el sistema
+               financiero.</p>
+
+          <div class="contacto-grid">
+               <div class="canal-contacto">
+                    <h3>Vía WhatsApp</h3>
+                    <p>Atención inmediata para consultas rápidas e inscripciones.</p>
+                    <a href="https://wa.me/51900000000" class="link-directo" target="_blank">Enviar Mensaje</a>
+               </div>
+
+               <div class="canal-contacto">
+                    <h3>Correo Electrónico</h3>
+                    <p>Envíanos tus documentos o solicita información corporativa.</p>
+                    <a href="mailto:info@eonm.com" class="link-directo">info@eonm.com</a>
+               </div>
+
+               <div class="canal-contacto" style="border-bottom-color: var(--azul-acento);">
+                    <h3>Horario de Atención</h3>
+                    <p><strong>Lunes a Viernes:</strong><br> 9:00 AM - 6:00 PM</p>
+                    <p><strong>Sábados:</strong><br> 9:00 AM - 1:00 PM</p>
+               </div>
+          </div>
+     </section>
+
+     <section style="background-color: var(--azul-primario); color: white; text-align: center; padding: 40px;">
+          <h3>Transformando la experiencia real en conocimiento práctico.</h3>
+     </section>
+
+     <footer>
+          <p>&copy; 2026 Escuela Online de Negocios y Microfinanzas</p>
+     </footer>
+</body>
+
+</html>

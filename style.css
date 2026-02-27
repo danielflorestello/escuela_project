@@ -1,0 +1,96 @@
+/* Paleta de colores basada en el logo */
+:root {
+     --azul-primario: #06406B;
+     --azul-acento: #00AEEF;
+     --gris-suave: #F4F6F8;
+     --gris-texto: #555;
+     --gris-borde: #BBC0C5;
+     --blanco: #FFFFFF;
+}
+
+body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin: 0;
+     line-height: 1.6;
+     color: var(--gris-texto);
+     background-color: var(--blanco);
+}
+
+/* Navegación */
+header {
+     background: var(--azul-primario);
+     padding: 1rem 5%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+}
+
+.logo {
+     color: var(--blanco);
+     font-weight: bold;
+     font-size: 1.5rem;
+     text-decoration: none;
+}
+
+nav a {
+     color: var(--blanco);
+     text-decoration: none;
+     margin-left: 20px;
+     font-weight: 500;
+}
+
+nav a:hover {
+     color: var(--azul-acento);
+}
+
+/* Secciones Generales */
+section {
+     padding: 60px 10%;
+}
+
+h1,
+h2,
+h3 {
+     color: var(--azul-primario);
+}
+
+.btn {
+     background: var(--azul-acento);
+     color: white;
+     padding: 12px 25px;
+     border: none;
+     border-radius: 5px;
+     text-decoration: none;
+     display: inline-block;
+     transition: 0.3s;
+}
+
+.btn:hover {
+     background: var(--azul-primario);
+}
+
+/* Footer */
+footer {
+     background: #222;
+     color: white;
+     text-align: center;
+     padding: 20px;
+     margin-top: 40px;
+}
+
+/* Grid para el programa */
+.grid-modulos {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 20px;
+}
+
+.card {
+     border: 1px solid var(--gris-borde);
+     padding: 20px;
+     border-radius: 8px;
+     background: var(--gris-suave);
+}
