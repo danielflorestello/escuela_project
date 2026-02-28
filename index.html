@@ -7,6 +7,7 @@
      <title>Escuela Online de Negocios y Microfinanzas</title>
      <link rel="stylesheet" href="style.css">
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -17,7 +18,9 @@
                     <img src="imagenes/logo.jpeg" alt="Logo Escuela" width="25%">
                </div>
 
-               <ul class="nav-links">
+               <i class="fa fa-bars menu-toggle" id="mobile-menu"></i>
+
+               <ul class="nav-links" id="nav-list">
                     <li><a href="#inicio" class="active">Inicio</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="#programa">Programa</a></li>
@@ -26,72 +29,81 @@
           </nav>
      </header>
 
-     <section id="inicio" class="hero">
-          <div class="hero-content">
-               <h1>Formación de Asesores de Negocios</h1>
-               <p>Un programa integral diseñado para formar asesores altamente empleables y efectivos en microfinanzas.
-               </p>
-               <a href="#programa" class="btn-secondary">Ver Módulos</a>
-          </div>
-     </section>
-
-     <section id="nosotros" class="container">
-          <div class="section-title">
-               <h2>¿Por qué elegirnos?</h2>
-          </div>
-
-          <div class="grid">
-               <div class="card">
-                    <h3>Enfoque 100% práctico y aplicado</h3>
+     <main>
+          <section id="inicio" class="hero">
+               <div class="hero-content">
+                    <h1>Formación de Asesores de Negocios</h1>
+                    <p>Un programa integral diseñado para formar asesores altamente empleables y efectivos en
+                         microfinanzas.
+                    </p>
+                    <a href="#programa" class="btn-secondary">Ver Módulos</a>
                </div>
+          </section>
 
-               <div class="card">
-                    <h3>Basado en experiencia real del sistema financiero</h3>
-               </div>
-
-               <div class="card">
-                    <h3>Casos reales y herramientas de campo</h3>
-               </div>
-
-               <div class="card">
-                    <h3>Lenguaje simple y directo</h3>
-               </div>
-
-               <div class="card">
-                    <h3>Orientación a empleabilidad</h3>
-               </div>
-
-               <div class="card">
-                    <h3>Formación ética y con impacto social</h3>
-               </div>
-          </div>
-     </section>
-
-     <section id="programa" class="bg-light">
-          <div class="container">
+          <section id="nosotros" class="container">
                <div class="section-title">
-                    <h2>Programa de Formación Especializada</h2>
-                    <p>10 Módulos diseñados para dominar el sistema financiero.</p>
+                    <h2>¿Por qué elegirnos?</h2>
                </div>
-               <div class="modules-grid">
-                    <div class="module-item"><span>01</span> Fundamentos de Microfinanzas</div>
-                    <div class="module-item"><span>02</span> Conociendo al Emprendedor</div>
-                    <div class="module-item"><span>03</span> Evaluación del Negocio en Campo</div>
-                    <div class="module-item"><span>04</span> Análisis Crediticio Práctico</div>
-                    <div class="module-item"><span>05</span> Armado del Crédito</div>
-                    <div class="module-item"><span>06</span> Desembolso y Acompañamiento</div>
-                    <div class="module-item"><span>07</span> Prevención de Morosidad</div>
-                    <div class="module-item"><span>08</span> Cobranza Ética y Negociación</div>
-                    <div class="module-item"><span>09</span> Formalización y Escalamiento</div>
-                    <div class="module-item"><span>10</span> Proyecto Final</div>
+
+               <div class="grid">
+                    <div class="card">
+                         <h3>Enfoque 100% práctico y aplicado</h3>
+                    </div>
+
+                    <div class="card">
+                         <h3>Basado en experiencia real del sistema financiero</h3>
+                    </div>
+
+                    <div class="card">
+                         <h3>Casos reales y herramientas de campo</h3>
+                    </div>
+
+                    <div class="card">
+                         <h3>Lenguaje simple y directo</h3>
+                    </div>
+
+                    <div class="card">
+                         <h3>Orientación a empleabilidad</h3>
+                    </div>
+
+                    <div class="card">
+                         <h3>Formación ética y con impacto social</h3>
+                    </div>
                </div>
-          </div>
-     </section>
+          </section>
+
+          <section id="programa" class="bg-light">
+               <div class="container">
+                    <div class="section-title">
+                         <h2>Programa de Formación Especializada</h2>
+                         <p>10 Módulos diseñados para dominar el sistema financiero.</p>
+                    </div>
+                    <div class="modules-grid">
+                         <div class="module-item"><span>01</span> Fundamentos de Microfinanzas</div>
+                         <div class="module-item"><span>02</span> Conociendo al Emprendedor</div>
+                         <div class="module-item"><span>03</span> Evaluación del Negocio en Campo</div>
+                         <div class="module-item"><span>04</span> Análisis Crediticio Práctico</div>
+                         <div class="module-item"><span>05</span> Armado del Crédito</div>
+                         <div class="module-item"><span>06</span> Desembolso y Acompañamiento</div>
+                         <div class="module-item"><span>07</span> Prevención de Morosidad</div>
+                         <div class="module-item"><span>08</span> Cobranza Ética y Negociación</div>
+                         <div class="module-item"><span>09</span> Formalización y Escalamiento</div>
+                         <div class="module-item"><span>10</span> Proyecto Final</div>
+                    </div>
+               </div>
+          </section>
+
+          <a class="float" target="_blank" href="">
+               <i class="fab fa-whatsapp my-float"></i>
+          </a>
+
+     </main>
 
      <footer>
           <p>&copy; 2026 Escuela Online de Negocios y Microfinanzas. Todos los derechos reservados.</p>
      </footer>
 
+     <script src="script.js"></script>
 </body>
 
 </html>

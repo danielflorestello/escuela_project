@@ -124,10 +124,40 @@ body {
     font-size: 0.8rem;
 }
 
+/* Ocultar el icono en pantallas grandes */
+.menu-toggle {
+    display: none !important;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
-    .nav-links { display: none; } /* Idealmente aquí pondrías un menú hamburguesa */
-    .hero h1 { font-size: 2rem; }
+    .menu-toggle { 
+        display: block !important; 
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: var(--primary-color); 
+    }
+
+    .nav-links {
+        display: none; /* Oculto por defecto en móvil */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+    }
+
+    /* Esta es la clase que el JS activará */
+    .nav-links.active-menu {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
 }
 
 footer {
@@ -154,9 +184,18 @@ footer {
     align-items: center;
 }
 
+.about-text {
+    text-align: justify;
+}
+
 .mission-card, .vision-card {
-    text-align: center;
+    text-align: justify;
     padding: 40px;
+}
+
+.mission-card h2, .vision-card h2 {
+    color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .icon {
@@ -164,10 +203,25 @@ footer {
     margin-bottom: 15px;
 }
 
+.feature {
+    display: flex;
+    align-items: flex-start; /* Alinea el icono arriba, al nivel del título */
+    gap: 15px;               /* Espacio entre el icono y el bloque de texto */
+    margin-bottom: 20px;
+}
+
 .feature h4 {
     color: var(--accent-color);
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-icon {
+    color: #2b6cb0;
+    font-size: 4rem;
+    margin-top: 5px;
 }
 
 .active {
@@ -179,4 +233,24 @@ footer {
     .about-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Icono de WhatsApp */
+.float {
+     position: fixed;
+     width: 60px;
+     height: 60px;
+     bottom: 40px;
+     right: 40px;
+     background-color: #25d366;
+     color: #FFF;
+     border-radius: 50px;
+     text-align: center;
+     font-size: 35px;
+     box-shadow: 2px 2px 3px #999;
+     z-index: 100;
+}
+
+.my-float {
+     margin-top: 13px;
 }
