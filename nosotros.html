@@ -3,40 +3,90 @@
 
 <head>
      <meta charset="UTF-8">
-     <title>Nosotros - EONM</title>
-     <link rel="stylesheet" href="styles.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Nosotros - Escuela Online de Negocios y Microfinanzas</title>
+     <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
      <header>
-          <a href="index.html" class="logo">EONM</a>
-          <nav>
-               <a href="index.html">Inicio</a>
-               <a href="nosotros.html">Nosotros</a>
-               <a href="programa.html">Programa</a>
-               <a href="metodologia.html">Metodología</a>
-               <a href="contacto.html">Contacto</a>
+          <nav class="navbar">
+               <div class="logo">
+                    <img src="imagenes/logo.jpeg" alt="Logo Escuela" width="25%">
+               </div>
+               <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html" class="active">Nosotros</a></li>
+                    <li><a href="#programa">Programa</a></li>
+                    <li><a href="#contacto" class="btn-primary">Contacto</a></li>
+               </ul>
           </nav>
      </header>
 
-     <section>
-          <h2>¿Quiénes Somos?</h2>
-          <p>Somos una Escuela Online de Negocios y Microfinanzas creada para cerrar la brecha entre la teoría y la
-               realidad del sistema financiero.</p>
-
-          <div style="display: flex; gap: 40px; margin-top: 30px;">
-               <div style="flex: 1;">
-                    <h3>Misión</h3>
-                    <p>Formar agentes de cambio financiero que impulsen la inclusión, el emprendimiento y la gestión
-                         ética.</p>
+     <section class="container">
+          <div class="about-grid">
+               <div class="about-text">
+                    <h1>Quiénes Somos</h1>
+                    <p>Somos una Escuela Online de Negocios y Microfinanzas creada para cerrar la brecha entre la teoría y la realidad del sistema financiero.</p>
+                    <p>Formamos profesionales, emprendedores y ejecutivos con un enfoque 100% práctico, basado en la experiencia real del crédito, el riesgo, la cobranza y el acompañamiento al microempresario.
+                    <p>No solo formamos ejecutivos. Formamos agentes de cambio financiero.</p>
                </div>
-               <div style="flex: 1;">
-                    <h3>Visión</h3>
-                    <p>Ser la escuela referente en negocios y microfinanzas, transformando la experiencia real en
-                         conocimiento práctico.</p>
+               <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600"
+                         alt="Equipo" style="width:100%; border-radius:10px;">
                </div>
           </div>
      </section>
+
+     <section class="bg-light">
+          <div class="container grid">
+               <div class="card mission-card">
+                    <div class="icon">🎯</div>
+                    <h3>Misión</h3>
+                    <p>Brindar educación online práctica en negocios y microfinanzas, basada en la experiencia real del
+                         sistema financiero, para formar agentes de cambio financiero que impulsen la inclusión, el
+                         emprendimiento, la formalización y una gestión ética y sostenible.</p>
+               </div>
+
+               <div class="card vision-card">
+                    <div class="icon">👁️</div>
+                    <h3>Visión</h3>
+                    <p>Ser la escuela online referente en negocios y microfinanzas, reconocida por formar agentes de
+                         cambio financiero que impulsen la inclusión, el emprendimiento y la formalización,
+                         transformando la experiencia real del sistema financiero en conocimiento práctico y accesible,
+                         con impacto ético y sostenible en la sociedad.</p>
+               </div>
+          </div>
+     </section>
+
+     <section class="container">
+          <div class="section-title">
+               <h2>Nuestro Enfoque</h2>
+               <p>Una escuela creada desde la experiencia real del sistema financiero.</p>
+          </div>
+          <div class="grid">
+               <div class="feature">
+                    <h4>Visión de Rentabilidad</h4>
+                    <p>Entendemos que el ascenso no lo define el volumen, sino la calidad de la cartera construida.</p>
+               </div>
+               <div class="feature">
+                    <h4>Evaluación en el Corazón</h4>
+                    <p>Analizamos la capacidad de pago real y validamos información con cruces técnicos para proteger la
+                         rentabilidad.</p>
+               </div>
+               <div class="feature">
+                    <h4>Propósito Humano</h4>
+                    <p>Formamos líderes que transformarán las microfinanzas con ética y responsabilidad.</p>
+               </div>
+          </div>
+     </section>
+
+     <footer>
+          <p>&copy; 2026 Escuela Online de Negocios y Microfinanzas. Todos los derechos reservados.</p>
+     </footer>
+
 </body>
 
 </html>
