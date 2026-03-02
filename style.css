@@ -240,6 +240,11 @@ footer {
     align-items: center;
 }
 
+.feature h2 {
+    margin-bottom: 5px;
+    display: flex;
+}
+
 .feature-icon {
     color: #2b6cb0;
     font-size: 4rem;
