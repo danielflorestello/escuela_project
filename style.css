@@ -64,7 +64,8 @@ body {
 
 /* --- NUEVA SECCIÓN HERO (ESTILO IMAGEN) --- */
 .hero {
-    background-color: var(--primary-color); /* El azul oscuro que ya tienes */
+    background-color: var(--primary-color);
+    /* El azul oscuro que ya tienes */
     min-height: 80vh;
     display: flex;
     align-items: center;
@@ -127,8 +128,8 @@ body {
 }
 
 .hero-arrows span {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-left: 20px solid white;
@@ -145,16 +146,16 @@ body {
     .hero-container {
         flex-direction: column;
     }
-    
+
     .hero-text-side {
         text-align: center;
         padding: 40px 20px;
     }
-    
+
     .hero-text-side .hero-actions {
         justify-content: center;
     }
-    
+
     .hero-title {
         font-size: 2.2rem;
     }
@@ -163,7 +164,7 @@ body {
         width: 100%;
         height: 40vh;
     }
-    
+
     .hero-arrows {
         display: none;
     }
@@ -190,7 +191,9 @@ body {
 
 /* Contenedores y Grillas */
 .container {
-    padding: 80px 10%;
+    /*padding: 80px 10%,*/
+
+    padding: 60px 10%;
 }
 
 .bg-light {
@@ -299,7 +302,68 @@ footer {
     background: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 60px 0;
+    padding: 80px 0;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.header-divider {
+    width: 60px;
+    height: 5px;
+    background: var(--accent-color);
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+
+    /* Ajuste del título principal para que no se vea gigante */
+    .header-content h1 {
+        font-size: 1.8rem;
+        padding: 0 15px;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    /* Reducimos el margen negativo de las tarjetas para que no se peguen tanto al título */
+    .info-grid {
+        margin-top: -30px;
+        padding: 0 10px;
+        gap: 15px;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+    .info-card p {
+        font-size: 0.95rem;
+        color: #666;
+        overflow-wrap: break-word;
+        /* Esto obliga al correo a saltar de línea si no cabe */
+        word-wrap: break-word;
+        margin-top: 5px;
+    }
+
+    /* Ajuste del padding del contenedor en pantallas pequeñas */
+    .container {
+        padding: 40px 15px;
+    }
 }
 
 .about-grid {
@@ -370,6 +434,124 @@ footer {
 }
 
 /* Estilos para Contacto */
+
+.contact-section-container {
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal real */
+    padding: 40px 5%;
+    background-color: transparent;
+}
+
+.contact-form-card {
+    background: var(--white);
+    width: 100%;
+    max-width: 900px;
+    /* Ancho generoso y equilibrado */
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(20, 33, 87, 0.1);
+    /* Sombra elegante usando tu color primario */
+    border-top: 6px solid var(--accent-color);
+    /* Toque verde del logo */
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-header h2 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.form-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Estructura del Formulario */
+.main-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Divide Nombre y Asunto */
+    gap: 20px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+/* Inputs y Textarea */
+.main-contact-form input,
+.main-contact-form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.main-contact-form input:focus,
+.main-contact-form textarea:focus {
+    border-color: var(--primary-color);
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(20, 33, 87, 0.1);
+}
+
+/* Botón Centrado */
+.form-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-send-large {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    /* Estilo píldora, más moderno */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-send-large:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* Adaptación para celulares */
+@media (max-width: 768px) {
+    .contact-form-card {
+        padding: 30px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        /* En móvil, uno sobre otro */
+    }
+
+    .btn-send-large {
+        width: 100%;
+    }
+}
+
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -810,23 +992,27 @@ input:focus {
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     border-bottom: 4px solid var(--accent-color);
 }
 
 .video-placeholder {
     position: relative;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    padding-bottom: 56.25%;
+    /* Relación de aspecto 16:9 */
     height: 0;
     background-color: #000;
     background-repeat: no-repeat;
-    
+
     /* ESTO ES LO IMPORTANTE PARA EL AJUSTE: */
-    background-size: contain;    /* La imagen cubre todo el div sin deformarse */
-    background-position: center; /* La imagen se centra */
-    
+    background-size: contain;
+    /* La imagen cubre todo el div sin deformarse */
+    background-position: center;
+    /* La imagen se centra */
+
     cursor: pointer;
-    border-radius: 15px 15px 0 0; /* Coincide con el borde de tus tarjetas */
+    border-radius: 15px 15px 0 0;
+    /* Coincide con el borde de tus tarjetas */
     overflow: hidden;
 
     transition: background-size 0.4s ease-in-out;
@@ -841,16 +1027,17 @@ input:focus {
     font-size: 4rem;
     transition: all 0.3s ease;
     z-index: 2;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .video-placeholder:hover {
     /* Efecto sutil de zoom al pasar el mouse */
-    background-size: 105%; 
+    background-size: 105%;
 }
 
 .video-placeholder:hover .video-overlay {
-    color: var(--accent-color); /* El verde de tu logo */
+    color: var(--accent-color);
+    /* El verde de tu logo */
     transform: translate(-50%, -50%) scale(1.1);
 }
 
