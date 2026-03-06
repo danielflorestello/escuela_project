@@ -3,40 +3,222 @@
 
 <head>
      <meta charset="UTF-8">
-     <title>Programa - Asesores en Formación</title>
-     <link rel="stylesheet" href="styles.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Programa de Formación - Escuela Online de Negocios</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
      <header>
-          <a href="index.html" class="logo">EONM</a>
-          <nav>
-               <a href="index.html">Inicio</a>
-               <a href="nosotros.html">Nosotros</a>
-               <a href="programa.html">Programa</a>
-               <a href="metodologia.html">Metodología</a>
-               <a href="contacto.html">Contacto</a>
+          <nav class="navbar">
+               <div class="logo">
+                    <img src="imagenes/logo.jpeg" alt="Logo Escuela" width="25%">
+               </div>
+
+               <i class="fa fa-bars menu-toggle" id="mobile-menu"></i>
+
+               <ul class="nav-links" id="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="programa.html" class="active">Programas</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="contacto.html" class="nav-contact">Contactos</a></li>
+               </ul>
           </nav>
      </header>
 
-     <section>
-          <h2>Asesores en Formación</h2>
-          <p>Un programa estructurado en 4 ejes estratégicos para el éxito en microfinanzas.</p>
+     <main>
+          <section class="page-header-program">
+               <div class="container">
+                    <h1>PROGRAMA DE FORMACIÓN</h1>
+                    <div class="header-divider"></div>
+                    <p class="tagline">GESTIÓN DE CARTERA Y MICROFINANZAS</p>
+               </div>
+          </section>
 
-          <h3>Módulos del Curso</h3>
-          <div class="grid-modulos">
-               <div class="card"><strong>Mod 1:</strong> Perfil del Asesor y Ética</div>
-               <div class="card"><strong>Mod 2:</strong> Psicología del Microempresario</div>
-               <div class="card"><strong>Mod 3:</strong> Evaluación en Campo (Flujo de Caja)</div>
-               <div class="card"><strong>Mod 4:</strong> Análisis Crediticio Práctico</div>
-               <div class="card"><strong>Mod 5:</strong> Armado y Comité de Crédito</div>
-               <div class="card"><strong>Mod 6:</strong> Desembolso y Seguimiento</div>
-               <div class="card"><strong>Mod 7:</strong> Prevención de Morosidad</div>
-               <div class="card"><strong>Mod 8:</strong> Cobranza Ética y Negociación</div>
-               <div class="card"><strong>Mod 9:</strong> Formalización y Escalamiento</div>
-               <div class="card"><strong>Mod 10:</strong> Proyecto Final y Certificación</div>
-          </div>
-     </section>
+          <section class="program-intro container">
+               <div class="intro-grid">
+                    <div class="intro-text">
+                         <h2>Certificación Especializada</h2>
+                         <p>Nuestro programa está diseñado para cerrar la brecha entre la teoría y la realidad del
+                              sistema financiero. Formamos <strong>Agentes de Cambio Financiero</strong> con un enfoque
+                              100% práctico.</p>
+                    </div>
+
+                    <div class="intro-stats">
+                         <div class="stat-box"><strong>10 </strong><span>Módulos</span></div>
+                         <div class="stat-box"><strong>100% </strong><span>Online</span></div>
+                         <div class="stat-box"><strong>Práctico </strong><span>Enfoque</span></div>
+                    </div>
+               </div>
+          </section>
+
+          <section class="curriculum container">
+               <div class="section-title center">
+                    <h2>Estructura del Programa</h2>
+                    <p>Un recorrido integral desde los fundamentos hasta el proyecto final.</p>
+               </div>
+
+               <div class="modules-accordion">
+                    <div class="module-card">
+                         <div class="module-header">
+                              <span class="module-number">01</span>
+                              <h3>Fundamentos de Microfinanzas</h3>
+                         </div>
+
+                         <div class="module-body">
+                              <ul>
+                                   <li>Concepto y evolución de las microfinanzas</li>
+                                   <li>El rol del asesor en la inclusión financiera</li>
+                                   <li>Ética y propósito en el crédito</li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="module-card">
+                         <div class="module-header">
+                              <span class="module-number">02</span>
+                              <h3>Conociendo al Emprendedor</h3>
+                         </div>
+
+                         <div class="module-body">
+                              <ul>
+                                   <li>Psicología del cliente y evaluación socioeconómica</li>
+                                   <li>Análisis del entorno familiar</li>
+                                   <li>Reputación y referencias</li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="module-card">
+                         <div class="module-header">
+                              <span class="module-number">03</span>
+                              <h3>Evaluación del Negocio en Campo</h3>
+                         </div>
+
+                         <div class="module-body">
+                              <ul>
+                                   <li>Visita al negocio y observación clave</li>
+                                   <li>Flujo de caja real: Ingresos vs Gastos</li>
+                                   <li>Capital de trabajo y rotación de inventarios</li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="module-card">
+                         <div class="module-header">
+                              <span class="module-number">04</span>
+                              <h3>Análisis Crediticio Práctico</h3>
+                         </div>
+
+                         <div class="module-body">
+                              <ul>
+                                   <li>Capacidad de pago y endeudamiento</li>
+                                   <li>Historial crediticio y riesgos ocultos</li>
+                                   <li>Determinación del monto correcto</li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="module-card">
+                         <div class="module-header">
+                              <span class="module-number">05</span>
+                              <h3>Armado del Crédito</h3>
+                         </div>
+
+                         <div class="module-body">
+                              <ul>
+                                   <li>Plazo, cuota y rentabilidad</li>
+                                   <li>Argumentación al comité de créditos</li>
+                                   <li>Errores que generan morosidad</li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="module-card">
+                         <div class="module-header">
+                              <span class="module-number">06</span>
+                              <h3>Desembolso y Acompañamiento</h3>
+                         </div>
+
+                         <div class="module-body">
+                              <ul>
+                                   <li>Uso correcto del crédito y alertas tempranas.</li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="module-card">
+                         <div class="module-header">
+                              <span class="module-number">07</span>
+                              <h3>Prevención de la Morosidad</h3>
+                         </div>
+
+                         <div class="module-body">
+                              <ul>
+                                   <li>Señales de alerta y cultura de pago.</li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="module-card">
+                         <div class="module-header">
+                              <span class="module-number">08</span>
+                              <h3>Cobranza Ética y Negociación</h3>
+                         </div>
+
+                         <div class="module-body">
+                              <ul>
+                                   <li>Estrategias de cobranza y negociación win-win.</li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="module-card">
+                         <div class="module-header">
+                              <span class="module-number">09</span>
+                              <h3>Formalización y Escalamiento</h3>
+                         </div>
+
+                         <div class="module-body">
+                              <ul>
+                                   <li>Beneficios de la formalización (RUC/SUNAT).</li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="module-card final">
+                         <div class="module-header">
+                              <span class="module-number">10</span>
+                              <h3>Proyecto Final y Certificación</h3>
+                         </div>
+
+                         <div class="module-body">
+                              <ul>
+                                   <li>Evaluación real de un negocio y certificación final.</li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="cta-container">
+                    <a href="contacto.html" class="btn-primary-large">INICIAR MI INSCRIPCIÓN</a>
+               </div>
+          </section>
+
+          <a class="float" target="_blank" href="">
+               <i class="fab fa-whatsapp my-float"></i>
+          </a>
+     </main>
+
+     <footer>
+          <p>&copy; 2026 Escuela Online de Negocios y Microfinanzas. Todos los derechos reservados.</p>
+     </footer>
+
+     <script src="script.js"></script>
 </body>
 
 </html>
