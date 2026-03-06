@@ -1157,6 +1157,11 @@ input:focus {
     padding-top: 8px;
 }
 
+.stat-box {
+    padding-bottom: 10px;
+    padding-top: 8px;
+}
+
 .modules-accordion {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
