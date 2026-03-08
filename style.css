@@ -55,8 +55,7 @@ body {
 }
 
 .logo img {
-    width: 150px;
-    /* Ajuste manual del logo */
+    width: 100px;
 }
 
 .nav-links {
@@ -607,6 +606,7 @@ footer {
 @media (max-width: 992px) {
     .hero-container {
         flex-direction: column;
+        text-align: center;
     }
 
     .hero-image-side {
@@ -635,6 +635,7 @@ footer {
         left: 0;
         width: 100%;
         background-color: var(--white);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         padding: 20px 0;
     }
 
